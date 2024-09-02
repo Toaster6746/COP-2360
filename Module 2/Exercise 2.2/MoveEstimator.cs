@@ -1,6 +1,6 @@
 string hours = Console.ReadLine();
 string hoursNumberPart = hours.Remove(hours.IndexOf(' '));
-int hoursNum = int.Parse(hoursNumberPart);
+float hoursNum = float.Parse(hoursNumberPart);
 string miles = Console.ReadLine();
 string milesNumberPart = miles.Remove(miles.IndexOf(' '));
 int milesNum = int.Parse(milesNumberPart);
