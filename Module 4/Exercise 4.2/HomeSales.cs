@@ -47,11 +47,5 @@ Dictionary<char, double> sales = new Dictionary<char, double>() {
         }
 
         // Display results
-        Console.WriteLine("\nSales Summary:");
-        foreach (var entry in sales)
-        {
-            Console.WriteLine($"Salesperson {entry.Key}: ${entry.Value:N}");
-        }
-
         Console.WriteLine($"Grand Total: ${grandTotal:N}");
         Console.WriteLine($"Highest Sale: {highestSalesperson}");
