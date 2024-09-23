@@ -53,6 +53,12 @@ for (int i = 0; i < numTemperatures; i++)
     }
 }
 
+// Display the invalid temperature message if applicable
+if (invalidTemperature)
+{
+    Console.WriteLine(invalidTempMessage);
+}
+
 // Determine the message based on the temperature trends
 if (gettingWarmer)
 {
@@ -71,9 +77,3 @@ else
 Console.WriteLine($"5-day Temperatures: [{string.Join(", ", temperatures)}]");
 double averageTemperature = temperatures.Average();
 Console.WriteLine($"Average Temperature: {averageTemperature:F1} degrees");
-
-// Display the invalid temperature message if applicable
-if (invalidTemperature)
-{
-    Console.WriteLine(invalidTempMessage);
-}
